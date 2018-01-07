@@ -1,21 +1,21 @@
 {
-  "name": "ts-node-skeleton",
+  "name": "node-ts-skeleton",
   "version": "0.0.1",
   "description": "A simple typescript skeleton to work with node and express",
   "main": "index.js",
   "dependencies": {
     "express": "^4.16.2",
-    "nodemon": "^1.14.8",
-    "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   },
   "devDependencies": {
+    "tslint": "^5.8.0",
+    "nodemon": "^1.14.8",
     "concurrently": "^3.5.1"
   },
   "scripts": {
     "compile": "tsc -w --outDir compiled",
     "serve": "nodemon ./compiled/index.js",
-    "start": "concurrently \"npm run compile\""
+    "start": "concurrently \"npm run compile\"  \"npm run serve\""
   },
   "keywords": [
     "ts",
@@ -25,6 +25,16 @@
     "nodets",
     "skeleton"
   ],
-  "author": "John Lennon de Melo Fernandes <jlfernandes91@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jl91/node-ts-skeleton"
+  },
+  "engines": {
+    "node": ">=v8.9.4"
+  },
+  "author": {
+    "name": "John Lennon de Melo Fernandes",
+    "email": "jlfernandes91@hotmail.com"
+  },
   "license": "LGPL-3.0"
 }
