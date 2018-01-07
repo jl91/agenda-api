@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jl91/node-ts-skeleton"
+    "url": "https://github.com/jl91/node-ts-skeleton"
   },
   "engines": {
     "node": ">=v8.9.4"
