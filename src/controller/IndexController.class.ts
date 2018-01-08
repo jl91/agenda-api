@@ -1,9 +1,12 @@
-export class IndexController {
+import {AbstractController} from "./AbstractController.class";
+import {Application} from "../application/Application.class";
 
+export class IndexController extends AbstractController {
 
-    public indexAction(request, response): void {
+    public application: Application;
 
-        response.json({
+    public indexAction(request, response) {
+        response.send({
             'message': 'Hello World! 1'
         });
     }
