@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "A simple typescript skeleton to work with node and express",
   "main": "index.js",
-  "readmeFilename": "README.md" ,
+  "readmeFilename": "README.md",
   "dependencies": {
     "express": "^4.16.2",
+    "ts-di": "^1.0.15",
     "typescript": "^2.6.2"
   },
   "devDependencies": {

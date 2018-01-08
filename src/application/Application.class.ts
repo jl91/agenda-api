@@ -14,7 +14,7 @@ export class Application {
         this.mountRoutes();
     }
 
-    public registerMiddlewareBefore(): void {
+    private registerMiddlewareBefore(): void {
         this.express.use('/', this.router);
     }
 
