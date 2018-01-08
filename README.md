@@ -1,1 +1,1 @@
-A simple typescript skeleton to work with node and express
+Agenda Restfull api based on jl91/node-ts-skeleton
