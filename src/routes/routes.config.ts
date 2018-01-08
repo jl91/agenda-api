@@ -4,13 +4,11 @@ export class RoutesConfig {
 
     public routes: Array<Route>;
 
-
     constructor() {
         this.routes = [
-            new Route("/", "IndexController", 'indexAction', ["GET"])
+            new Route("/", "IndexController", 'indexAction', ["GET"]),
+            new Route("/users", "UsersController", 'indexAction', ["GET"])
         ];
     }
-
-
 }
 

@@ -3,7 +3,10 @@ import {RoutesConfig} from "../routes/routes.config";
 import {Route} from "../routes/route.class";
 import {Controller} from "../controller/Controller.interface";
 import {IndexController} from "../controller/IndexController.class";
+import {UsersController} from "../controller/UsersController.class";
+import {Injectable} from "ts.di/src/Injector";
 
+@Injectable()
 export class Application {
     public express;
     private router;
@@ -61,6 +64,10 @@ export class Application {
             switch (controllerClass) {
                 case 'IndexController':
                     controller = new IndexController(instance);
+                    break;
+                case 'UsersController':
+                    controller = new UsersController(instance);
+                    break;
             }
 
             this.controllersMap

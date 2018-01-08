@@ -4,8 +4,8 @@
     "module": "commonjs",
     "outDir": "compiled",
     "sourceMap": true,
-    "typeRoots": ["node_modules/@types"]
-
+    "typeRoots": ["node_modules/@types"],
+    "experimentalDecorators": true
   },
   "files": [
 
